@@ -7,7 +7,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 const TV_URL = 'http://qidian.sxtvs.com/sxtoutiao/getLiveTvV11?cnwestAppId=3&cnwestLbs=%E5%8D%81%E5%A0%B0%E5%B8%82&deviceId=43b2bfb9-dffa-4c46-a75f-c754a057aba5&deviceInfo=samsung-SM-G9750-12&version=5.2.2&imeiId=f591ccd35e75394c292ea2fcf2b22af814508d0752b0f97d6fa77d1a7ec57b32&typeid=17';
 const RADIO_URL = 'http://qidian.sxtvs.com/sxtoutiao/getLiveRadioV11?cnwestLbs=%E5%8D%81%E5%A0%B0%E5%B8%82&typeid=18&deviceId=43b2bfb9-dffa-4c46-a75f-c754a057aba5&version=5.2.2&deviceInfo=samsung-SM-G9750-12&cnwestAppId=3&imeiId=%E6%9C%AA%E5%88%9D%E5%A7%8B%E5%8C%96';
