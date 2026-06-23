@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 const API_URL = 'https://web.cbg.cn/live/getLiveUrl?url=https://sjlivecdn.cbg.cn/app_2/_definst_/ls_3.stream/chunklist.m3u8';
 
