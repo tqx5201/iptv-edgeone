@@ -8,7 +8,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 import { xxteaDecrypt } from '../utils/crypto';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 const API_URL = 'https://clientapi.jlntv.cn/broadcast/list?page=1&size=10000&type=1';
 const XXTEA_KEY = '5b28bae827e651b3';
