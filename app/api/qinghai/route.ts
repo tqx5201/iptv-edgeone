@@ -129,4 +129,4 @@ export async function GET(request: NextRequest) {
   return NextResponse.redirect(playUrl, 302);
 }
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
