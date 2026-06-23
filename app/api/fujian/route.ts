@@ -7,7 +7,7 @@ import { getRealHost } from '../utils/url';
  * Edge Runtime
  */
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 const API_BASE_URL = 'https://live.fjtv.net/m2o/channel/channel_info.php';
 
