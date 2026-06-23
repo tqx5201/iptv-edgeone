@@ -13,7 +13,7 @@ import { getRealHost } from '../utils/url';
  * 注意：CDN 需要 Referer 验证，必须全链路代理
  */
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 // 频道名称到友好ID的映射
 const CHANNEL_NAME_MAP: Record<string, string> = {
