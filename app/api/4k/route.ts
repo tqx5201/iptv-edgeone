@@ -7,7 +7,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 // AES-256-ECB加密key
 const AES_KEY = '01234567890123450123456789012345';
