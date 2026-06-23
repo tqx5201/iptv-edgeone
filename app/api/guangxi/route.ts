@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 import { aesEcbDecrypt, hexToBytes } from '../utils/crypto';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 // 频道配置：[m3u8_url, aes_key_hex, blocks]
 const CHANNELS: Record<number, [string, string, number, string]> = {
