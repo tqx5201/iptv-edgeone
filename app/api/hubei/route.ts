@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRealHost } from '../utils/url';
 
-export const runtime = 'edge';
+//export const runtime = 'edge';
 
 // 长江云 site_id 配置表（43个地区）
 const CJYUN_SITES: Record<string, string> = {
