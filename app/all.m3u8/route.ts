@@ -164,7 +164,7 @@ async function fetchRegionChannels(
   prefixName: string,
   groupName: string,
   baseUrl: string,
-  retryMax = 2
+  retryMax = 0
 ): Promise<Channel[]> {
   const url = `${baseUrl}/api/${api}?id=list`;
   console.log(`Fetching: ${url}`);
