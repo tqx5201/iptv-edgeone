@@ -168,7 +168,7 @@ export async function GET(request: NextRequest) {
   if (streamUrl.startsWith('rtmp://')) {
     // 如果请求M3U文件
     if (searchParams.get('m3u')) {
-      const m3uContent = `#EXTM3U\n#EXTINF:-1,${CHANNEL_NAMES[id]}\n${streamUrl}\n`;
+      const m3uContent = `#EXTM3U\n#EXTINF:-1,${CHANNEL_MAP[id][1]}\n${streamUrl}\n`;
       return new NextResponse(m3uContent, {
         headers: {
           'Content-Type': 'application/vnd.apple.mpegurl',
