@@ -11,7 +11,7 @@ import { getRealHost } from '../utils/url';
 
 // 频道映射表
 
-const CHANNEL_MAP = {
+const CHANNEL_MAP: Record<string, [number, string]> = {
   hnws: [145, '河南卫视'],
   hnds: [141, '河南都市'],
   hnms: [146, '河南民生'],
