@@ -1,6 +1,6 @@
-# 全国IPTV直播流代理 - EdgeOne Pages部署项目
+# 全国IPTV直播流代理 -
 
-基于Next.js的全国各地电视台直播代理服务,可部署到腾讯云EdgeOne Pages。
+基于Next.js的全国各地电视台直播代理服务,可部署到腾讯云EdgeOne Pages,Vercel,Cloudflare。
 
 ## 支持的电视台
 
