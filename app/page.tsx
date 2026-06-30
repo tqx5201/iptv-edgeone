@@ -1,6 +1,17 @@
 import styles from './styles/home.module.css';
+import { headers } from 'next/headers';
+
 
 export default function Home() {
+  const headersList = headers();
+  // 获取host（域名+端口）
+  const host = headersList.get('host') || '';
+  // 判断http/https
+  const proto = headersList.get('x-forwarded-proto') || 'http';
+  const baseUrl = `${proto}://${host}/`;
+
+
+  
   return (
     <div className={styles.container}>
       <h1>📺 全国IPTV直播流代理</h1>
@@ -721,7 +732,7 @@ export default function Home() {
           <li><strong>生成播放列表</strong>:
             <pre className={styles.pre}>
 {`# 获取CCTV频道列表
-curl https://your-domain.com/api/cctv?id=list > cctv.m3u8
+curl https://{baseUrl}/api/cctv?id=list > cctv.m3u8
 
 # 获取4K频道列表
 curl https://your-domain.com/api/4k?id=list > 4k.m3u8
