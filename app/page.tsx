@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <div className={styles.container}>
       <h1>📺 全国IPTV直播流代理</h1>
-      <p>基于Next.js + Edge Runtime的全国各地电视台直播代理服务 | EdgeOne Pages部署版本</p>
+      <p>基于Next.js的全国各地电视台直播代理服务 | EdgeOne Pages,vercel,cloudflare部署版本</p>
       
       <div className={styles.grid}>
         
