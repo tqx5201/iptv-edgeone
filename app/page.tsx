@@ -7,7 +7,7 @@ export default async function Home() {
   const host = headersList.get('host') || '';
   // 判断http/https
   const proto = headersList.get('x-forwarded-proto') || 'http';
-  const baseUrl = `${proto}://${host}/`;
+  const baseUrl = `${proto}://${host}`;
 
 
   
@@ -731,7 +731,7 @@ export default async function Home() {
           <li><strong>生成播放列表</strong>:
             <pre className={styles.pre}>
 {`# 获取CCTV频道列表
-curl https://${baseUrl}/api/cctv?id=list > cctv.m3u8
+curl ${baseUrl}/api/cctv?id=list > cctv.m3u8
 
 # 获取4K频道列表
 curl https://your-domain.com/api/4k?id=list > 4k.m3u8
